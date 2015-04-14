@@ -1,0 +1,73 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/SiteMaster.Master" AutoEventWireup="true" CodeBehind="ThemeMaster.master.cs" Inherits="MagicCMS.Themes.Default.ThemeMaster" %>
+<asp:Content ID="Content_head" ContentPlaceHolderID="head" runat="server">
+    <link href="/Themes/Default/css/main.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content_body" ContentPlaceHolderID="Main" runat="server">
+    <!-- begin accesibility skip to nav skip content -->
+    <ul class="visuallyhidden" id="top">
+        <li><a href="#nav" title="Skip to navigation" accesskey="n">Skip to navigation</a>
+        </li>
+        <li><a href="#page" title="Skip to content" accesskey="c">Skip to content</a></li>
+    </ul>
+
+    <!-- end /.visuallyhidden accesibility-->
+    <header class="navbar navbar-inverse navbar-fixed-top">
+        <!-- mobile navigation trigger-->
+        <div class="container">
+            <div class="navbar-header">
+                <a href="../" class="navbar-brand">Bootswatch</a>
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <nav class="navbar-collapse collapse" id="navbar-main">
+                <asp:Panel ID="Menu" runat="server">
+                </asp:Panel>
+            </nav>
+        </div>
+    </header>
+
+    <div id="page" class="clearfix">
+        <asp:Panel ID="Menu_speciale" runat="server" Visible="false">
+        </asp:Panel>
+        <asp:ContentPlaceHolder ID="Main_Content" runat="server"></asp:ContentPlaceHolder>
+
+    </div>
+    <section class="footer-credits">
+        <div class="container">
+            <ul class="clearfix social">
+                <li>© 2013-2015 Ingegneri Riuniti - via G.Pepe, 15 41126 Modena - P. IVA 01986430369</li>
+                <li><a class="fc-webicon linkedin round" href="https://www.linkedin.com/company/2321943?trk=tyah&trkInfo=tarId%3A1424171682471%2Ctas%3Aingegneri%20riuniti%2Cidx%3A1-1-1"
+                    title="Ingegneri Riuniti su Linkedin" target="_blank"></a>&nbsp;&nbsp;&nbsp;<a class="" href="https://www.linkedin.com/company/2321943?trk=tyah&trkInfo=tarId%3A1424171682471%2Ctas%3Aingegneri%20riuniti%2Cidx%3A1-1-1"
+                    target="_blank">Ingegneri Riuniti su Linkedin</a>
+                </li>
+                <li><a class="fc-webicon facebook round" href="https://www.facebook.com/IngegneriRiuniti"
+                    title="Ingegneri Riuniti su Facebook" target="_blank"></a>&nbsp;&nbsp;&nbsp;<a class="" 
+                    href="https://www.facebook.com/IngegneriRiuniti"
+                    target="_blank">Ingegneri Riuniti su Facebook</a>
+                </li>
+            </ul>
+        </div>
+        <!--close footer-credits container-->
+    </section>
+    <!--close section .footer-credits-->
+    <span class="backToTop"><a href="#top"><i class="e-icon-up-open-big"></i></a></span>
+
+</asp:Content>
+<asp:Content ID="Content_scripts" ContentPlaceHolderID="scripts" runat="server">
+    <script src="/Themes/Ingegneri/js/plugins.js"></script>
+    <script src="/Themes/Ingegneri/js/custom.js"></script>
+
+    <!--[if gt IE 8]><!-->
+    <script src='/Themes/Ingegneri/js/sequence-greater-than-ie-8.jquery-min.js'></script>
+    <!--<![endif]-->
+    <!--[if lte IE 8]>
+        <script src='/Themes/Ingegneri/js/sequence-less-than-ie-8.jquery-min.js'></script>
+    <![endif]-->
+    <asp:ContentPlaceHolder runat="server" ID="child_scripts"></asp:ContentPlaceHolder>
+</asp:Content>
+

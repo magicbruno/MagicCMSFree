@@ -1,0 +1,147 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<title>Sliding Bar Demo</title>
+	    <!-- jquery 1.7.1 -->
+	    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	    <script type="text/javascript">
+	        !window.jQuery && document.write('<script src="\/scripts\/jquery\/jquery-1.7.1.js"><\/script>');
+	    </script>
+	    <!-- mb_SlideBar -->
+		<script type="text/javascript" language="JavaScript" src="/scripts/mb-slideBar-jq/mb_SlideBar.jquery.min.js"></script>
+		<script type="text/javascript">
+			$(function()
+			{
+				/**
+				 * Associo al selettore '.mb-menu-top' il comportamento mb_SliderBar.
+				 * Le opzioni prevedono una larghezza o un altezza della barra di 34 pixel, 
+				 * il caricamento dei contenuti nell'oggetto con selettore ".target" 
+				 * e il richiamo della funzione di callback a caricamento terminato. La 
+				 * funzione cambia il colore del testo di ".target" pescando un colore 
+				 * dall'array "colors" in maniera pseudocasuale.
+				 */
+				$('.mb-menu-top')
+					.mb_SlideBar(
+					{
+						dir:'top',
+						height:34, 
+						ajaxsettings:
+						{
+							target:'.target',
+							callback: function()
+								{
+									var colors = ['#666', '#600', '#f60','#006', '#060']
+									$(this).css('color', colors[Math.round(Math.random() * 5)]);
+								}
+						}
+					});
+				/**
+				 * Associo ai rimanenti tre selettori  il comportamento mb_SliderBar.
+				 * Le opzioni prevedono una larghezza o un altezza della barra di 34 pixel, 
+				 * il caricamento dei contenuti nell'oggetto con selettore ".target" 
+				 * senza richiamo della funzione di callback.
+				 */
+				$('.mb-menu-left').mb_SlideBar({dir:'left',width:34, ajaxsettings: {target:'.target'}});
+				$('.mb-menu-right').mb_SlideBar({dir:'right',width:34, ajaxsettings:{'target':'.target'}});
+				$('.mb-menu-bottom').mb_SlideBar({dir:'bottom', height:34, ajaxsettings: {'target':'.target'}});
+			})
+		</script>
+  		<link rel="stylesheet" type="text/css" href="css/stile.css">
+	</head>
+	<body>
+		<div class="content">
+			<ul class="mb-menu-top">
+				<li>
+					<a href="a.html" title="Lettera A" class="sq-button">
+						<span>A</span>
+					</a>
+				</li>
+				<li>
+					<a href="b.html" title="Lettera B" class="sq-button sq-button-image">
+						<span>B</span>
+					</a>
+				</li>
+				<li>
+					<a href="c.html" title="Lettera C" class="sq-button sq-button-bg-r">
+						<span>C</span>
+					</a>
+				</li>
+				<li>
+					<a href="d.html" title="Lettera D">
+						<img alt="brra" src="css/images/birra.png">
+					</a>
+				</li>
+			</ul>
+			<div class="clearfloat"></div>
+			<ul class="mb-menu-right">
+				<li>
+					<a href="a.html" title="Lettera A" class="sq-button">
+						<span>A</span>
+					</a>
+				</li>
+				<li>
+					<a href="b.html" title="Lettera B" class="sq-button sq-button-image">
+						<span>B</span>
+					</a>
+				</li>
+				<li>
+					<a href="c.html" title="Lettera C" class="sq-button sq-button-bg-r">
+						<span>C</span>
+					</a>
+				</li>
+				<li>
+					<a href="d.html" title="Lettera D">
+						<img alt="brra" src="css/images/birra.png">
+					</a>
+				</li>
+			</ul>
+			<div class="target"></div>
+			<ul class="mb-menu-left">
+				<li>
+					<a href="a.html" title="Lettera A" class="sq-button">
+						<span>A</span>
+					</a>
+				</li>
+				<li>
+					<a href="b.html" title="Lettera B" class="sq-button sq-button-image">
+						<span>B</span>
+					</a>
+				</li>
+				<li>
+					<a href="c.html" title="Lettera C" class="sq-button sq-button-bg-r">
+						<span>C</span>
+					</a>
+				</li>
+				<li>
+					<a href="d.html" title="Lettera D">
+						<img alt="brra" src="css/images/birra.png">
+					</a>
+				</li>
+			</ul>
+			<div class="clearfloat"></div>
+			<ul class="mb-menu-bottom">
+				<li>
+					<a href="a.html" title="Lettera A" class="sq-button">
+						<span>A</span>
+					</a>
+				</li>
+				<li>
+					<a href="b.html" title="Lettera B" class="sq-button sq-button-image">
+						<span>B</span>
+					</a>
+				</li>
+				<li>
+					<a href="c.html" title="Lettera C" class="sq-button sq-button-bg-r">
+						<span>C</span>
+					</a>
+				</li>
+				<li>
+					<a href="d.html" title="Lettera D">
+						<img alt="brra" src="css/images/birra.png">
+					</a>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

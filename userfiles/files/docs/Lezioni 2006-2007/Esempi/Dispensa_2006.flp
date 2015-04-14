@@ -1,0 +1,63 @@
+﻿<flash_project name="Dispensa_2006" version="1">
+    <project_folder name="cap09 - Programmazione condizionale" expanded="false">
+        <project_file path="./ProgrammazineCondizionale.fla" filetype="fla" profile="" />
+    </project_folder>
+    <project_folder name="cap10 - Iterazione" expanded="false">
+        <project_file path="./Iterazione_for.fla" filetype="fla" profile="" />
+        <project_file path="./Iterazione_while.fla" filetype="fla" profile="" />
+    </project_folder>
+    <project_folder name="cap11 - Funzioni e metodi" expanded="false">
+        <project_file path="./FunzioneConNome.fla" filetype="fla" profile="" />
+        <project_file path="./FunzioneAnonima_1.fla" filetype="fla" profile="" />
+        <project_file path="./FunzioneAnonima_2.fla" filetype="fla" profile="" />
+        <project_file path="./Somma.fla" filetype="fla" profile="" />
+        <project_file path="./Somma_0.fla" filetype="fla" profile="" />
+        <project_file path="./metodi.fla" filetype="fla" profile="" />
+    </project_folder>
+    <project_folder name="cap13 - Object, Array, Date" expanded="false">
+        <project_folder name="Array" expanded="false">
+            <project_file path="./basisArrays.fla" filetype="fla" profile="" />
+            <project_file path="./array.fla" filetype="fla" profile="" />
+            <project_file path="./indexArray.fla" filetype="fla" profile="" />
+            <project_file path="./elementoVuoto.fla" filetype="fla" profile="" />
+            <project_file path="./multiArray1.fla" filetype="fla" profile="" />
+            <project_file path="./multiArray3.fla" filetype="fla" profile="" />
+            <project_file path="./multiArray2.fla" filetype="fla" profile="" />
+        </project_folder>
+        <project_folder name="Date" expanded="true">
+            <project_file path="./Date_1.fla" filetype="fla" profile="" />
+            <project_file path="./Date_2.fla" filetype="fla" profile="" />
+        </project_folder>
+    </project_folder>
+    <project_folder name="cap14 - Creazione di classi" expanded="false">
+        <project_folder name="XML_menu" expanded="false">
+            <project_file path="./XML_menu/menu.xml" filetype="xml" />
+            <project_file path="./XML_menu/XmlMenu.as" filetype="as" />
+            <project_file path="./XML_menu/xmlmenu.fla" filetype="fla" profile="" />
+        </project_folder>
+        <project_file path="./User.as" filetype="as" />
+        <project_file path="./user_test.fla" filetype="fla" profile="" />
+        <project_file path="./picture_test.fla" filetype="fla" profile="" />
+        <project_file path="./Picture.as" filetype="as" />
+        <project_file path="./login_test.fla" filetype="fla" profile="" />
+        <project_file path="./Login.as" filetype="as" />
+    </project_folder>
+    <project_folder name="cap15 - Disegnamo un rettangolo" expanded="true">
+        <project_file path="./Rettangolo/rettangolo_prova_2.fla" filetype="fla" profile="" />
+        <project_file path="./Rettangolo/rettangolo_prova.fla" filetype="fla" profile="" />
+        <project_file path="./Rettangolo/Rettangolo.as" filetype="as" />
+        <project_file path="./Rettangolo/rettangolo_prova_3.fla" filetype="fla" profile="" />
+        <project_file path="./Rettangolo/rettangolo_prova_4.fla" filetype="fla" profile="" />
+    </project_folder>
+    <project_folder name="cap16 - Ereditarità" expanded="false">
+        <project_folder name="JukeBox" expanded="true">
+            <project_file path="./JukeBox/JukeBox_prova.fla" filetype="fla" profile="" />
+            <project_file path="./JukeBox/JukeBox.as" filetype="as" />
+        </project_folder>
+        <project_folder name="DataIt" expanded="true">
+            <project_file path="./DataIt/datait_prova_2.fla" filetype="fla" profile="" />
+            <project_file path="./DataIt/DataIt.as" filetype="as" />
+            <project_file path="./DataIt/datait_prova_1.fla" filetype="fla" profile="" />
+        </project_folder>
+    </project_folder>
+</flash_project>

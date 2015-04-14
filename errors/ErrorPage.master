@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="MagicCMS.errors.errors_ErrorPage" Codebehind="ErrorPage.master.cs" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>MagicCMS - Errore</title>
+<%--    <link href="/css/reset.css" rel="stylesheet" type="text/css" />--%>
+    <link href="/mb_admin/css/newadmin.css" rel="stylesheet" type="text/css" />
+    <link href="/mb_admin/css/testata.css" rel="stylesheet" type="text/css" />
+    <link href="/mb_admin/css/fonts/stylesheet.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="twoColFixLtHdr">
+    <form id="form1" runat="server">
+    <div id="container">
+       <div id="header">	
+            <div id="testata">
+                <img class="sedili" src="/mb_admin/css/images/MBus_3sedili.gif" alt="Logo MagicCMS" />
+                <div class="magiccms">
+                    <h1><span class="nero">MAGIC</span><span class="grigio">CMS</span><br /><span class="arancio">by Bruno Migliaretti</span> </h1>
+                    <p class="grigio"><asp:Literal ID="NomeSito" runat="server"></asp:Literal></p>
+                </div>
+	        </div>
+        </div>
+        <div id="Pagina" class="pagina">
+            <h1>Errore</h1>
+             <asp:Panel ID="PanelErrorMessage" runat="server">
+                <asp:ContentPlaceHolder id="ContentPlaceHolder_errorBody" runat="server"> 
+                </asp:ContentPlaceHolder>
+            </asp:Panel>
+        </div>
+        <div id="footer">
+	        <div class="chiusura">
+	            <p>
+    	            &copy; <a href="http://www.magicbusmultimedia.it">Magicbus Multimedia</a>
+	            </p>	
+            </div>	
+        </div>
+    </div>
+    </form>
+</body>
+</html>
